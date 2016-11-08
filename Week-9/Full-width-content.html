@@ -1,0 +1,115 @@
+<!doctype html>
+2 <html class="no-js" lang="en">
+3     <head>
+4         <meta charset="utf-8">
+5         <meta http-equiv="x-ua-compatible" content="ie=edge">
+6         <title>Full-width content</title>
+7         <meta name="description" content="">
+8         <meta name="viewport" content="width=device-width, initial-scale=1">
+9
+
+10         <!-- External link (relative) to your main stylesheet -->
+11         <link rel="stylesheet" href="screen.css">
+
+<style>
+@import "compass/css3";
+
+.wrapper {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+
+  font-weight: bold;
+  text-align: center;
+}
+
+.wrapper > * {
+  padding: 10px;
+  flex: 1 100%;
+}
+
+.header {
+  background: tomato;
+}
+
+.footer {
+  background: lightgreen;
+}
+
+.main {
+  text-align: left;
+  background: deepskyblue;
+}
+
+.aside-1 {
+  background: gold;
+}
+
+.aside-2 {
+  background: hotpink;
+}
+
+@media all and (min-width: 600px) {
+  .aside { flex: 1 auto; }
+}
+
+@media all and (min-width: 800px) {
+  .main    { flex: 3 0px; }
+  .aside-1 { order: 1; }
+  .main    { order: 2; }
+  .aside-2 { order: 3; }
+  .footer  { order: 4; }
+}
+
+body {
+  padding: 2em;
+}
+
+</style>
+12
+
+13         <!-- External link (relative) to your javascript file -->
+14         <script src="js/index.js"></script>
+15     </head>
+
+16
+  <div class="wrapper">
+  <header class="header">Header</header>
+  <article class="main">
+    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet,
+    consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+     ut labore et dolore magna aliqua.
+   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+</p>
+  </article>
+  <aside class="aside aside-1">sidebar 1</aside>
+  <aside class="aside aside-2">sidebar 2</aside>
+  <footer class="footer">Footer</footer>
+</div>
+17
+38     </body>
+39 </html>

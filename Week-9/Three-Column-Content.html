@@ -1,0 +1,93 @@
+<!doctype html>
+2 <html class="no-js" lang="en">
+3     <head>
+4         <meta charset="utf-8">
+5         <meta http-equiv="x-ua-compatible" content="ie=edge">
+6         <title>Three-Column Content Page</title>
+7         <meta name="description" content="">
+8         <meta name="viewport" content="width=device-width, initial-scale=1">
+9
+
+10         <!-- External link (relative) to your main stylesheet -->
+11         <link rel="stylesheet" href="screen.css">
+
+<style>
+body{
+  margin: 0;
+}
+.wrapper{
+  min-height: 100vh;
+  background: #ccc;
+  display: flex;
+  flex-direction: column;
+}
+.header, .footer{
+  height: 50px;
+  background: #666;
+  color: #fff;
+}
+.content {
+  display: flex;
+  flex: 1;
+  background: #999;
+  color: #000;
+}
+.columns{
+  display: flex;
+  flex:1;
+}
+.main{
+  flex: 1;
+  order: 2;
+  background: #eee;
+}
+.sidebar-first{
+  width: 20%;
+  background: #ccc;
+  order: 1;
+}
+.sidebar-second{
+  width: 20%;
+  order: 3;
+  background: #ddd;
+}
+</style>
+12
+
+13         <!-- External link (relative) to your javascript file -->
+14         <script src="js/index.js"></script>
+15     </head>
+16     <body>
+  <div class="wrapper">
+  <header class="header">Header</header>
+  <section class="content">
+    <div class="columns">
+      <main class="main">Content:Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+</main>
+      <aside class="sidebar-first">Sidebar Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+</aside>
+      <aside class="sidebar-second">Sidebar Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+</aside>
+    </div>
+  </section>
+  <footer class="footer">Footer</footer>
+</div>
+</body>
+39 </html>
